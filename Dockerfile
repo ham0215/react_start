@@ -6,6 +6,6 @@ RUN npm install -g yarn
 WORKDIR /app
 ADD . /app
 
-RUN yarn install
+RUN yarn install --check-files
 
 #CMD ["node", "index.js"]
