@@ -1,6 +1,15 @@
 import React from 'react';
 import logo from './logo.svg';
+import styled from 'styled-components/macro';
 import './App.css';
+
+const StyledDiv = styled.div`
+  width: 100px;
+`;
+
+const ExtendStyledDiv = styled(StyledDiv)`
+  background-color: red;
+`;
 
 function App() {
   return (
@@ -10,6 +19,8 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <StyledDiv>StyledDiv</StyledDiv>
+        <ExtendStyledDiv>ExtendStyledDiv</ExtendStyledDiv>
         <a
           className="App-link"
           href="https://reactjs.org"
